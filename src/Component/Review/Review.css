@@ -1,0 +1,12 @@
+.userPart{
+    display: flex;
+    justify-content:start;
+    margin: 20px;
+    padding-top: 30px;
+}
+.userLoca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
