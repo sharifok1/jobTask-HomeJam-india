@@ -21,6 +21,8 @@ const Body = () => {
             <div>
              <Grid container spacing={2} className='gridContainer'>
                 <Grid item xs={12} md={4} lg={3}>
+                    {/* ------------card1
+                    ---------------------------------------------- */}
                    <div className='backCard'>
                    <div className='fontCard'>
                        <div>
