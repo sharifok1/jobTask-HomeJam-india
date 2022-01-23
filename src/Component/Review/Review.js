@@ -15,7 +15,16 @@ const Review = () => {
                 <Typography 
                 sx={{color:'#ccc', textAlign:'start', fontSize:'32px'}}
                 >
-                    Reviews
+                   <div className='cardHeading'>
+                   <span className='under-line' style={{color:'#fff',fontSize:'32px'}}>Reviews</span>
+                <span style={{color:'#bbb',
+                fontSize:'16px',
+                }}
+                >
+                    1/12  &nbsp;&nbsp;<i class="fas fa-arrow-left"> </i> &nbsp;&nbsp; <i class="fas fa-arrow-right"></i>
+                </span>
+                   </div>
+                    
                 </Typography>
                 <Grid container spacing={2} className='gridContainer'>
                 {/* ---------------------------//review card styled by body cards styles(reused previous code) 

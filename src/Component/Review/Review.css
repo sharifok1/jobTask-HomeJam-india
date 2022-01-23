@@ -10,3 +10,18 @@
     align-items: center;
     justify-content: center;
 }
+.under-line{
+    display: inline-block;
+    position: relative;
+    color:#ddd;
+}
+.under-line::after{
+    content:"";
+    height:3px;
+    width:50%;
+    background-color:rgba(2, 89, 235, 1);
+    position:absolute;
+    left:2%;
+    margin-top: 5px;
+    bottom:0;
+}

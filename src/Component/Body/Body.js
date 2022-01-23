@@ -1,12 +1,12 @@
 import { Container, Grid } from '@mui/material';
 import React from 'react';
 import './Body.css'
-import image1 from '../../Asset/card1.png'
-import image2 from '../../Asset/card2.png'
-import image3 from '../../Asset/card3.png'
-import image4 from '../../Asset/card4.png'
-
-
+import image1 from '../../Asset/card1.png';
+import image2 from '../../Asset/card2.png';
+import image3 from '../../Asset/card3.png';
+import image4 from '../../Asset/card4.png';
+import ConfirmationNumberOutlinedIcon from '@mui/icons-material/ConfirmationNumberOutlined';
+import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
 
 const Body = () => {
     return (
@@ -15,7 +15,7 @@ const Body = () => {
         >
            <Container>
             <div className='cardHeading'>
-                <span style={{color:'#fff',fontSize:'32px'}}>UpComming</span>
+                <span className='under-line-upComming' style={{color:'#fff',fontSize:'32px'}}>UpComming</span>
                 <span style={{color:'#E5C558'}}>view All</span>
             </div>
             <div>
@@ -27,13 +27,24 @@ const Body = () => {
                    <div className='backCard'>
                    <div className='fontCard'>
                        <div>
-                       <img src={image1} alt="" />
+                       <img className='fontCard-img' src={image1} alt="" />
                         <div className='fontCardAsset'>
                         <button 
                             style={{backgroundColor:'rgba(229, 197, 88, 1)' ,border:'none',padding:'3px'}}>Folk
                         </button>
                         <h2>Benny Dayal</h2>
-                        <span style={{color:'#05f'}}>More Info <i class="fas fa-arrow-right"></i> </span>
+                        <div>
+                        <span style={{color:'#05f'}} className='more-btn'>More Info <i class="fas fa-arrow-right goArrow"></i> </span>
+                        <span className='ticket-hover'>
+                            <ConfirmationNumberOutlinedIcon
+                            className='ticket'
+                           ></ConfirmationNumberOutlinedIcon>
+                      
+                            <ConfirmationNumberIcon
+                             className='ticket-filed'
+                            ></ConfirmationNumberIcon>
+                        </span>
+                        </div>
                         </div>
                        </div>
                    </div>
@@ -45,13 +56,22 @@ const Body = () => {
                    <div className='backCard'>
                    <div className='fontCard'>
                    <div>
-                       <img src={image2} alt="" />
+                       <img  className='fontCard-img' src={image2} alt="" />
                        <div className='fontCardAsset'> 
                        <button 
                             style={{backgroundColor:'rgba(229, 197, 88, 1)' ,border:'none',padding:'3px'}}>Folk
                         </button>
                         <h2>Vijay Yesudas</h2>
-                        <span style={{color:'#05f'}}>More Info <i class="fas fa-arrow-right"></i> </span>
+                        <span style={{color:'#05f'}} className='more-btn'>More Info <i class="fas fa-arrow-right goArrow"></i> </span>
+                        <span className='ticket-hover'>
+                            <ConfirmationNumberOutlinedIcon
+                            className='ticket'
+                           ></ConfirmationNumberOutlinedIcon>
+                      
+                            <ConfirmationNumberIcon
+                             className='ticket-filed'
+                            ></ConfirmationNumberIcon>
+                        </span>
                        </div>
                     </div>
                    </div>
@@ -63,13 +83,22 @@ const Body = () => {
                   <div className='backCard'>
                    <div className='fontCard'>
                    <div>
-                       <img src={image3} alt="" />
+                       <img  className='fontCard-img' src={image3} alt="" />
                         <div className='fontCardAsset'>
                             <button 
                                 style={{backgroundColor:'rgba(229, 197, 88, 1)' ,border:'none',padding:'3px'}}>Folk
                             </button>
                                 <h2>Andrea jeremiah</h2>
-                                <span style={{color:'#05f'}}>More Info <i class="fas fa-arrow-right"></i> </span>
+                                <span style={{color:'#05f'}} className='more-btn'>More Info <i class="fas fa-arrow-right goArrow"></i> </span>
+                                <span className='ticket-hover'>
+                            <ConfirmationNumberOutlinedIcon
+                            className='ticket'
+                           ></ConfirmationNumberOutlinedIcon>
+                      
+                            <ConfirmationNumberIcon
+                             className='ticket-filed'
+                            ></ConfirmationNumberIcon>
+                        </span>
                             </div>
                        </div>
                    </div>
@@ -81,13 +110,22 @@ const Body = () => {
                     <div className='backCard'>
                     <div className='fontCard'>
                     <div>
-                       <img src={image4} alt="" />
+                       <img  className='fontCard-img' src={image4} alt="" />
                         <div  className='fontCardAsset'>
                         <button 
                             style={{backgroundColor:'rgba(229, 197, 88, 1)' ,border:'none',padding:'3px'}}>Folk
                         </button>
                         <h2>Shilpa Rao</h2>
-                        <span style={{color:'#05f'}}>More Info <i class="fas fa-arrow-right"></i> </span>
+                        <span style={{color:'#05f'}} className='more-btn'>More Info <i class="fas fa-arrow-right goArrow"></i> </span>
+                        <span className='ticket-hover'>
+                            <ConfirmationNumberOutlinedIcon
+                            className='ticket'
+                           ></ConfirmationNumberOutlinedIcon>
+                      
+                            <ConfirmationNumberIcon
+                             className='ticket-filed'
+                            ></ConfirmationNumberIcon>
+                        </span>
                         </div>
                        </div>
                     </div>
