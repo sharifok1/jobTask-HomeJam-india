@@ -9,6 +9,7 @@ import './Review.css'
 
 const Review = () => {
     return (
+        // --------------------------review section/
         <div style={{backgroundColor:'rgba(10, 11, 26, 1)',paddingBottom:'153px'}}>
             <Container>
                 <Typography 
@@ -17,6 +18,9 @@ const Review = () => {
                     Reviews
                 </Typography>
                 <Grid container spacing={2} className='gridContainer'>
+                {/* ---------------------------//review card styled by body cards styles(reused previous code) 
+                ----------------------------------------------------------------------------------------------*/}
+                {/*---------------------- review-1// */}
                 <Grid item xs={12} md={4}>
                    <div className='backCard'>
                    <div className='fontCard' style={{border:'1px solid goldenrod'}}>
@@ -48,6 +52,7 @@ const Review = () => {
                    </div>
                    </div>
                 </Grid>
+                 {/*---------------------- review-2// */}
                 <Grid item xs={12} md={4}>
                 <div className='backCard'>
                    <div className='fontCard' style={{border:'1px solid goldenrod'}}>
@@ -79,6 +84,7 @@ const Review = () => {
                    </div>
                    </div>
                 </Grid>
+                {/*---------------------- review-3// */}
                 <Grid item xs={12} md={4}>
                 <div className='backCard'>
                    <div className='fontCard' style={{border:'1px solid goldenrod'}}>

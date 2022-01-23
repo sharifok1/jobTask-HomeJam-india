@@ -1,6 +1,7 @@
 .CardContainer{
     background-color:#0A0B1A;
-    padding-bottom:80px ;
+    padding-bottom:80px;
+    margin-top: -5px;
 }
 .cardHeading{
     width: 100%;
@@ -10,13 +11,14 @@
     padding-top: 124px;
     
 }
-/* s */
+/*----------------------------------- card back part*/
 .backCard{
    background-image:linear-gradient(to bottom, rgba(48, 26, 104, 1),rgba(35, 76, 151, 1)) ;
    border-radius: 10px;
    margin: 10px;
    margin-top: 50px;
 }
+/* ---------------------------------card font part */
 .fontCard{
     background-color: rgba(17, 18, 41, 1);
     border-radius: 10px;
@@ -38,7 +40,7 @@
  opacity: 0.4;
  
 }
-
+/* -------------------------------------------responsive  card */
 @media only screen and (max-width:992px) {
     .backCard{
         width: 268px;

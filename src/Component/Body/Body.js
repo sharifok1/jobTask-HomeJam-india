@@ -21,7 +21,8 @@ const Body = () => {
             <div>
              <Grid container spacing={2} className='gridContainer'>
                 <Grid item xs={12} md={4} lg={3}>
-                    {/* ------------card1
+
+                    {/* -------------------------card1
                     ---------------------------------------------- */}
                    <div className='backCard'>
                    <div className='fontCard'>
@@ -38,6 +39,8 @@ const Body = () => {
                    </div>
                    </div>
                 </Grid>
+                 {/* ------------------------------card2
+                    ---------------------------------------------- */}
                 <Grid item xs={12} md={4} lg={3}>
                    <div className='backCard'>
                    <div className='fontCard'>
@@ -54,6 +57,8 @@ const Body = () => {
                    </div>
                 </div>
                 </Grid>
+                 {/* --------------------------------card3
+                    ---------------------------------------------- */}
                 <Grid item xs={12} md={4} lg={3}>
                   <div className='backCard'>
                    <div className='fontCard'>
@@ -70,6 +75,8 @@ const Body = () => {
                    </div>
                    </div>
                 </Grid>
+                 {/* ----------------------------------card4
+                    ---------------------------------------------- */}
                 <Grid item xs={12} md={4} lg={3}>
                     <div className='backCard'>
                     <div className='fontCard'>

@@ -4,17 +4,19 @@ import React from 'react';
 import NavBar from '../Navbar/NavBar';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import calStar from '../../Asset/CalStar.png'
-// import banar from "../../Asset/header-ban.png"
 import './Header.css'
-import Body from '../Body/Body';
 const Header = () => {
     const theme =  useTheme()
+
+    // ----------------------------header break-point style(responsive)
     const useStyle = makeStyles({
         heading:{
             [theme.breakpoints.down('md')]: {
+              position:'relative',
                textAlign:'start',
-               paddingTop:'100px',
-               paddingLeft:'10%'
+               paddingTop:'150px',
+               paddingLeft:'10%',
+               top:'10px',
               },
             [theme.breakpoints.up('md')]: {
                textAlign:'start',
@@ -37,10 +39,13 @@ const Header = () => {
     })
     const {heading,headerTxt}=useStyle()
     return (
-        <div className='header'>
+        // ----------------background banar
+        <div className='header'> 
             <div className='background-layer'>
                 <div>
+                    {/* --------------navigation component */}
                    <NavBar></NavBar>
+                   {/* ---------------banar text and circle */}
                    <div>
                        <Box>
                            <Typography variant="h1" component="div" gutterBottom
@@ -56,6 +61,9 @@ const Header = () => {
                             Live from their sofa to yours. Get closer to your favorite <br /> artists, and never miss out.
                            </p>
                        </Box>
+
+                       {/* -------------------------------banar circle 
+                       ---------------------------------------------------*/}
                        <div className='circleContainer'>
                            <div className='circle'>
                                 <FavoriteBorderIcon sx={{color:'#16f',fontSize:'20px',mb:1}}></FavoriteBorderIcon>
